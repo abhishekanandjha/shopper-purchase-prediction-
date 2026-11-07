@@ -42,6 +42,7 @@ https://archive.ics.uci.edu/dataset/468/online+shoppers+purchasing+intention+dat
 | Weekend | boolean | whether the visit was on a weekend |
 
 **Preprocessing**
+
 - Dropped duplicate rows.
 - Stratified 80/20 train/test split (`random_state=42`). The test part is saved as `test_data.csv`, which is what gets uploaded in the app.
 - Numeric columns are standardised. `Month`, `VisitorType`, `OperatingSystems`, `Browser`, `Region` and `TrafficType` are one-hot encoded (the last four are stored as numbers but they are only category codes). That gives 73 features after encoding.
@@ -119,6 +120,7 @@ Precision, recall and F1 are for the positive class (purchase). A model that pre
 ## Streamlit app
 
 Features in the app:
+
 1. **CSV upload** for test data (sidebar). There is also a button to download the sample `test_data.csv`, and a checkbox to use it directly.
 2. **Model selection dropdown** for the five saved models.
 3. **Evaluation metrics** (Accuracy, AUC, Precision, Recall, F1, MCC) for the chosen model on the uploaded data.

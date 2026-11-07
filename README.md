@@ -4,7 +4,7 @@
 **BITS ID:** 2026AJ05089  
 **Course:** Machine Learning, M.Tech (AIML)
 
-**Live app:** <STREAMLIT_APP_LINK>
+**Live app:** https://abhishek-shopper-purchase-ml.streamlit.app
 
 ---
 
